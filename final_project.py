@@ -87,7 +87,7 @@ getafe_homes = madrid_south_belt[madrid_south_belt['level5'] == 'Getafe'][['pric
 getafe_prices_per_m2 = getafe_homes['price'].mean() / getafe_homes['surface'].mean()
 print("Getafe's mean price per sq meter is", int(getafe_prices_per_m2))
 
-# Price per m2 in Getafe:
+# Price per m2 in Alcorcón:
 alcorcon_homes = madrid_south_belt[madrid_south_belt['level5'] == 'Alcorcón'][['price', 'surface']]
 alcorcon_price_per_m2 = alcorcon_homes['price'].mean() / alcorcon_homes['surface'].mean()
 print("Alcorcón's mean price per sq meter is", int(alcorcon_price_per_m2))
